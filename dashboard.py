@@ -12,8 +12,8 @@ st.set_page_config(layout="wide", page_title="Farm & Control Plot Similarity")
 # 2. Data Loading with Caching
 @st.cache_data
 def load_data():
-    control_farms_path = '/Users/mipl/Downloads/dashboard/soil_sampled_152_control_farms.csv'
-    farms_centroids_path = '/Users/mipl/Downloads/dashboard/7661_farms_centroids.csv'
+    control_farms_path = 'soil_sampled_152_control_farms.csv'
+    farms_centroids_path = '7661_farms_centroids.csv'
     
     # Check for files (crucial for Streamlit Cloud deployment)
     if not os.path.exists(control_farms_path) or not os.path.exists(farms_centroids_path):
